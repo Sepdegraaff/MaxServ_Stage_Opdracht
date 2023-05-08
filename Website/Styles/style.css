@@ -73,19 +73,29 @@ body, .heading-m, .body-m, .heading-S
     font-family: 'plus_jakarta_sans_Ebold';
     /*Font size relative to px*/
     font-size: 1.77em;
+    /*Padding differing from side to side*/
     padding: 50px 30px;
+    /*Removes margin*/
     margin: 0;
+    /*Line-height to space the sentences*/
     line-height: 40px;
+    /*Text color*/
     color: white;
 }
 
 .heading-S
 {
+    /*Font family added*/
     font-family: 'plus_jakarta_sans_Ebold';
+    /*Font size relative to px*/
     font-size: 1.4em;
+    /*Padding differing from all sides*/
     padding: 0px 30px 20px 30px;
+    /*Removes margin*/
     margin: 0;
+    /*Line-height to space the sentences*/
     line-height: 28px;
+    /*Text color*/
     color: #13183F;
 }
 
@@ -93,6 +103,7 @@ body, .heading-m, .body-m, .heading-S
 
 #section-wrapper
 {
+
     display: flex;
     flex-direction: column;
     row-gap: 50px;
