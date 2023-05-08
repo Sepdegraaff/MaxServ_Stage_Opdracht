@@ -17,7 +17,13 @@
     src: url("../Fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-ExtraBold.ttf");
 }
 
-/*Removes margin and padding from the body*/
+@font-face
+{
+    font-family: 'plus_jakarta_sans_bold';
+    src: url("../Fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf");
+}
+
+/*Removes margin and padding from multiple elements*/
 body, .heading-m, .body-m, .heading-S
 {
     margin: 0;
@@ -27,17 +33,45 @@ body, .heading-m, .body-m, .heading-S
 /*Font presets*/
 .body-m
 {
+    /*Font family added*/
     font-family: 'plus_jakarta_sans_medium';
+    /*Font size relative to px*/
     font-size: 1em;
+    /*Padding for top, bottom and sides*/
     padding: 0 30px;
+    /*Removed margin*/
     margin: 0;
+    /*Line-height to space the sentences*/
     line-height: 28px;
+    /*Text color*/
     color: #83869A;
+}
+
+.body-s
+{
+    /*Font family added*/
+    font-family: 'plus_jakarta_sans_bold';
+    /*Font size relative to px*/
+    font-size: 0.88em;
+    /*Block element display so hovering is more accurate*/
+    display: block;
+    /*Padding for all sides*/
+    padding: 30px;
+    /*Custom gradient for letters*/
+    background: -webkit-linear-gradient(#FF6F48, #F02AA6);
+    /*Clips only the text*/
+    -webkit-background-clip: text;
+    /*Makes the color gradient */
+    -webkit-text-fill-color: transparent;
+    /*No automatic style from the links*/
+    text-decoration: none;
 }
 
 .heading-m
 {
+    /*Font family added*/
     font-family: 'plus_jakarta_sans_Ebold';
+    /*Font size relative to px*/
     font-size: 1.77em;
     padding: 50px 30px;
     margin: 0;
@@ -48,8 +82,8 @@ body, .heading-m, .body-m, .heading-S
 .heading-S
 {
     font-family: 'plus_jakarta_sans_Ebold';
-    font-size: 1.33em;
-    padding: 50px 30px 20px 30px;
+    font-size: 1.4em;
+    padding: 0px 30px 20px 30px;
     margin: 0;
     line-height: 28px;
     color: #13183F;
@@ -66,13 +100,12 @@ body, .heading-m, .body-m, .heading-S
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(to bottom right, #FFFFFF, #f3f3ff);
-
 }
 
 .row
 {
     display: flex;
-    gap: 10px;
+    gap: 50px;
     flex-direction: row;
     align-self: center;
 }
@@ -84,12 +117,23 @@ body, .heading-m, .body-m, .heading-S
     height: 300px;
     background-color: #ffffff;
     border-radius: 10px;
+    box-shadow: 1px 1px 14px #e5e5e5;
 }
 
 #courses-box
 {
     background-image: linear-gradient(#FF6F48, #F02AA6);
 }
+
+/*Icon styling*/
+
+.icon
+{
+    position: relative;
+    bottom: 12%;
+    left: 10%;
+}
+
 
 
 

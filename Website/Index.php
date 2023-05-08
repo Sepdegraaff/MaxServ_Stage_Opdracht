@@ -29,6 +29,9 @@
                         </h1>
                     </div>
                     <div class="box-wrapper">
+                        <div class="icon">
+                            <img src="Images/Icons/icon-animation.svg" alt="Icon">
+                        </div>
                         <h2 class="heading-S">
                             Animation
                         </h2>
@@ -38,8 +41,16 @@
                             motion design and captivate
                             your audience.
                         </p>
+                        <?php
+                            require 'Includes/variables.php';
+
+                            echo $get_started;
+                        ?>
                     </div>
                     <div class="box-wrapper">
+                        <div class="icon">
+                            <img src="Images/Icons/icon-design.svg" alt="Icon">
+                        </div>
                         <h2 class="heading-S">
                             Design
                         </h2>
@@ -47,11 +58,19 @@
                             Create beautiful, usable
                             interfaces to help shape the
                             future of how the web looks.
+                            <br>
+                            <br>
                         </p>
+                        <?php
+                            echo $get_started;
+                        ?>
                     </div>
                 </div>
                 <div class="row">
                     <div class="box-wrapper">
+                        <div class="icon">
+                            <img src="Images/Icons/icon-photography.svg" alt="Icon">
+                        </div>
                         <h2 class="heading-S">
                             Photography
                         </h2>
@@ -60,8 +79,14 @@
                             lighting, composition, and focus
                             to capture exceptional photos.
                         </p>
+                        <?php
+                            echo $get_started;
+                        ?>
                     </div>
                     <div class="box-wrapper">
+                        <div class="icon">
+                            <img src="Images/Icons/icon-crypto.svg" alt="Icon">
+                        </div>
                         <h2 class="heading-S">
                             Crypto
                         </h2>
@@ -71,8 +96,14 @@
                             from beginner to advanced with
                             this 54 hour course.
                         </p>
+                        <?php
+                            echo $get_started;
+                        ?>
                     </div>
                     <div class="box-wrapper">
+                        <div class="icon">
+                            <img src="Images/Icons/icon-business.svg" alt="Icon">
+                        </div>
                         <h2 class="heading-S">
                             Business
                         </h2>
@@ -83,8 +114,6 @@
                             investment.
                         </p>
                         <?php
-                            require 'Includes/variables.php';
-
                             echo $get_started;
                         ?>
                     </div>
