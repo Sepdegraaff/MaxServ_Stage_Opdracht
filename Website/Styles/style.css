@@ -11,8 +11,14 @@
     src: url("../Fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Medium.ttf");
 }
 
+@font-face
+{
+    font-family: 'plus_jakarta_sans_Ebold';
+    src: url("../Fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-ExtraBold.ttf");
+}
+
 /*Removes margin and padding from the body*/
-body
+body, .heading-m, .body-m, .heading-S
 {
     margin: 0;
     padding: 0;
@@ -22,6 +28,31 @@ body
 .body-m
 {
     font-family: 'plus_jakarta_sans_medium';
+    font-size: 1em;
+    padding: 0 30px;
+    margin: 0;
+    line-height: 28px;
+    color: #83869A;
+}
+
+.heading-m
+{
+    font-family: 'plus_jakarta_sans_Ebold';
+    font-size: 1.77em;
+    padding: 50px 30px;
+    margin: 0;
+    line-height: 40px;
+    color: white;
+}
+
+.heading-S
+{
+    font-family: 'plus_jakarta_sans_Ebold';
+    font-size: 1.33em;
+    padding: 50px 30px 20px 30px;
+    margin: 0;
+    line-height: 28px;
+    color: #13183F;
 }
 
 /*Box styling*/
@@ -32,7 +63,7 @@ body
     flex-direction: column;
     row-gap: 50px;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: linear-gradient(to bottom right, #FFFFFF, #f3f3ff);
 
