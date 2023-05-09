@@ -23,6 +23,12 @@
     src: url("../Fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf");
 }
 
+/*Width for main*/
+main
+{
+    width: 100%;
+}
+
 /*Removes margin and padding from multiple elements*/
 body, .heading-m, .body-m, .heading-S
 {
@@ -99,6 +105,22 @@ body, .heading-m, .body-m, .heading-S
     color: #13183F;
 }
 
+/*Hovering*/
+
+.body-s:hover
+{
+    /*Changes take 0.3 seconds*/
+    transition: 0.5s ease-in-out;
+    /*Increase font-size*/
+    font-size: 1em;
+    background: -webkit-linear-gradient(#4851FF, #F02AA6);
+    /*Clips only the text*/
+    -webkit-background-clip: text;
+    /*Makes the color gradient */
+    -webkit-text-fill-color: transparent;
+    /*No automatic style from the links*/
+}
+
 /*Box styling*/
 
 #section-wrapper
@@ -143,6 +165,38 @@ body, .heading-m, .body-m, .heading-S
     position: relative;
     bottom: 12%;
     left: 10%;
+}
+
+/*Responsive*/
+
+@media only screen and (min-width: 100px) and (max-width: 799px)
+{
+    #section-wrapper
+    {
+        width: 100%;
+        height: 200%;
+        padding: 40px 0 40px 0;
+    }
+
+    .row
+    {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 799px) and (max-width: 1400px)
+{
+    #section-wrapper
+    {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .row
+    {
+        flex-direction: column;
+    }
+
 }
 
 
