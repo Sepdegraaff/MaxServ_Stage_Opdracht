@@ -1,10 +1,10 @@
 <!doctype html>
 
 <!--
-    Auteur:             Sep de Graaff
-    Aanmaakdatum:       5-7-2023
+    Author:             Sep de Graaff
+    Date:               5-7-2023
 
-    Omschrijving:       Main pagina
+    Description:       Main pagina
  -->
 
 <html>
@@ -37,8 +37,5 @@
                 ?>
             </section>
         </main>
-        <footer>
-
-        </footer>
     </body>
 </html>

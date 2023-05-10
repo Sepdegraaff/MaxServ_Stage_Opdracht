@@ -1,3 +1,9 @@
+<!--Author:             Sep de Graaff-->
+<!--Date:               5-7-2023-->
+<!---->
+<!--Description:       Php variable page-->
+
+
 <?php
 
 

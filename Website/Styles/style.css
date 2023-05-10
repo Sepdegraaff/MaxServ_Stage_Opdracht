@@ -1,8 +1,7 @@
-/*Auteur:             Sep de Graaff
-/*Aanmaakdatum:       5-7-2023
+/*Author:             Sep de Graaff*/
+/*Date:               5-7-2023*/
 
-/*Omschrijving:       Main pagina css*\
-*/
+/*Description:       Main ccs for the index page*/
 
 /*Enabling external fonts*/
 @font-face
@@ -30,7 +29,7 @@ main
 }
 
 /*Removes margin and padding from multiple elements*/
-body, .heading-m, .body-m, .heading-S
+body, p, .heading-m, .body-m, .heading-S
 {
     margin: 0;
     padding: 0;
@@ -125,34 +124,50 @@ body, .heading-m, .body-m, .heading-S
 
 #section-wrapper
 {
-
+    /*Flex functions*/
     display: flex;
+    /*Direction of the row is in a column*/
     flex-direction: column;
+    /*The gap between the upper and under side of the elements*/
     row-gap: 50px;
+    /*Justifies the elements into the center*/
     justify-content: center;
-    width: 100vw;
+    /*Width and Height*/
+    width: 100%;
     height: 100vh;
+    /*Gradient background color*/
     background-image: linear-gradient(to bottom right, #FFFFFF, #f3f3ff);
 }
 
 .row
 {
+    /*FLex functions*/
     display: flex;
+    /*Gap between elements*/
     gap: 50px;
+    /*Makes rows out of the elements inside*/
     flex-direction: row;
+    /*Aligns itself in the center*/
     align-self: center;
 }
 
+
 .box-wrapper
 {
+    /*Box sizing to the border-box*/
     box-sizing: border-box;
+    /*Width and height*/
     width: 300px;
     height: 300px;
+    /*Background color*/
     background-color: #ffffff;
+    /*Border radius for smoother edges*/
     border-radius: 10px;
+    /*Small shadow to make the blocks pop more*/
     box-shadow: 1px 1px 14px #e5e5e5;
 }
 
+/*Gradient background color*/
 #courses-box
 {
     background-image: linear-gradient(#FF6F48, #F02AA6);
@@ -162,6 +177,7 @@ body, .heading-m, .body-m, .heading-S
 
 .icon
 {
+    /*Positioning of the icon*/
     position: relative;
     bottom: 12%;
     left: 10%;
@@ -173,11 +189,14 @@ body, .heading-m, .body-m, .heading-S
 {
     #section-wrapper
     {
+        /*Width and height*/
         width: 100%;
         height: 200%;
+        /*Padding for better spacing*/
         padding: 40px 0 40px 0;
     }
 
+    /*Changes the row to column so they go from top to bottom*/
     .row
     {
         flex-direction: column;
@@ -186,12 +205,14 @@ body, .heading-m, .body-m, .heading-S
 
 @media only screen and (min-width: 799px) and (max-width: 1400px)
 {
+    /*Changes the flex the direction and makes the gap bigger*/
     #section-wrapper
     {
         flex-direction: row;
         gap: 20px;
     }
 
+    /*Changes flex direction again to put the rows under each other*/
     .row
     {
         flex-direction: column;
