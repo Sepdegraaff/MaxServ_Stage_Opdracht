@@ -68,7 +68,7 @@ body, p, .heading-m, .body-m, .heading-S
     -webkit-background-clip: text;
     /*Makes the color gradient */
     -webkit-text-fill-color: transparent;
-    /*No automatic style from the links*/
+    /*No automatic styles from the links*/
     text-decoration: none;
 }
 
@@ -117,7 +117,7 @@ body, p, .heading-m, .body-m, .heading-S
     -webkit-background-clip: text;
     /*Makes the color gradient */
     -webkit-text-fill-color: transparent;
-    /*No automatic style from the links*/
+    /*No automatic styles from the links*/
 }
 
 /*Box styling*/
